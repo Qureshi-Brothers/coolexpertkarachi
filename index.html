@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cool Expert Karachi</title>
 <meta name="description" content="Cool Expert Karachi: AC installation, removal, gas charging, repairing and servicing, fridge and freezer repair. Home service in Karachi, 24/7 emergency.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%230a2f6b'/%3E%3Cpath d='M24 10v28M12 17l24 14M36 17 12 31' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%231f62b5'/%3E%3Cpath d='M24 10v28M12 17l24 14M36 17 12 31' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
   /* Layout idea: the client's visiting card turned into a page. Navy bands, frosted ice panels,
      and one AC unit in the hero blowing cool air across the first screen. */
   color-scheme: light;
-  --navy:#0a2f6b;
-  --blue:#1560bd;
-  --ice:#e6f1fc;
+  --navy:#1f62b5;
+  --blue:#2f7fd8;
+  --ice:#e8f2fd;
   --frost:#f4f9ff;
   --ink:#0d1b2e;
   --muted:#4d6079;
@@ -55,7 +55,7 @@ nav a{text-decoration:none;color:var(--navy)}
 nav a:hover{color:var(--blue)}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:700;font-size:16px;text-decoration:none;padding:13px 22px;border-radius:10px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(10,47,107,.18)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(31,98,181,.22)}
 .btn svg{width:20px;height:20px;flex:none}
 .btn.call{background:var(--navy);color:var(--white)}
 .btn.wa{background:var(--wa);color:var(--white)}
@@ -87,6 +87,12 @@ nav a:hover{color:var(--blue)}
 @keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(10px) rotate(30deg)}}
 @media (prefers-reduced-motion:reduce){.air path,.flake{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
 
+.hero-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:18px;box-shadow:0 18px 40px rgba(31,98,181,.22);display:block}
+.card img{width:calc(100% + 48px);margin:-24px -24px 6px;aspect-ratio:3/2;object-fit:cover;border-radius:14px 14px 0 0;display:block}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block}
+.gallery img.wide{grid-column:span 2;aspect-ratio:auto;height:100%}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
 /* sections */
 section{padding:64px 0}
 .head{max-width:40em;margin-bottom:34px}
@@ -113,11 +119,11 @@ section{padding:64px 0}
 
 .why{background:var(--navy);color:var(--white)}
 .why .head h2,.why .eyebrow{color:var(--white)}
-.why .head p{color:#cfe0f5}
+.why .head p{color:#eaf3fd}
 .why .grid{grid-template-columns:repeat(4,1fr)}
 .why .pt{border-left:3px solid #6fb0f2;padding:4px 0 4px 16px}
 .why .pt h3{color:var(--white);font-size:18px;margin-bottom:6px}
-.why .pt p{color:#cfe0f5;font-size:15.5px}
+.why .pt p{color:#eaf3fd;font-size:15.5px}
 
 .contact{background:var(--white)}
 .contact .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
@@ -135,7 +141,7 @@ label{font-weight:700;font-size:14px;color:var(--navy);display:grid;gap:6px}
 input,select,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);width:100%}
 textarea{min-height:84px;resize:vertical}
 
-footer{background:var(--ink);color:#c9d6e8;font-size:15px}
+footer{background:#163f73;color:#dbe8f7;font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between;padding-top:26px;padding-bottom:90px}
 footer b{color:var(--white)}
 
@@ -186,12 +192,13 @@ footer b{color:var(--white)}
 <header class="bar">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Cool Expert Karachi home">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#0a2f6b"/><use href="#i-flake" x="8" y="8" width="32" height="32" style="color:#fff"/></svg>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#1f62b5"/><use href="#i-flake" x="8" y="8" width="32" height="32" style="color:#fff"/></svg>
       <span><b>Cool Expert Karachi</b><small>AC &amp; FRIDGE HOME SERVICE</small></span>
     </a>
     <nav aria-label="Main">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
+      <a href="#work">Our work</a>
       <a href="#why">Why us</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -219,29 +226,7 @@ footer b{color:var(--white)}
       </ul>
     </div>
 
-    <div class="unit" aria-hidden="true">
-      <svg viewBox="0 0 520 400">
-        <g style="color:#9cc4ee">
-          <use class="flake" href="#i-flake" x="20" y="18" width="46" height="46" style="transform-origin:43px 41px"/>
-          <use class="flake b" href="#i-flake" x="440" y="250" width="58" height="58" style="transform-origin:469px 279px"/>
-          <use class="flake c" href="#i-flake" x="60" y="300" width="34" height="34" style="transform-origin:77px 317px"/>
-        </g>
-        <rect x="60" y="60" width="400" height="128" rx="26" fill="#ffffff" stroke="#cadcf1" stroke-width="3"/>
-        <rect x="60" y="150" width="400" height="38" rx="0" fill="#e6f1fc"/>
-        <path d="M60 162v0a26 26 0 0 0 26 26h348a26 26 0 0 0 26-26" fill="#d5e6f8"/>
-        <rect x="92" y="160" width="336" height="10" rx="5" fill="#0a2f6b"/>
-        <rect x="350" y="84" width="82" height="44" rx="10" fill="#0a2f6b"/>
-        <text x="391" y="115" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="26" fill="#ffffff">18°C</text>
-        <circle cx="96" cy="98" r="6" fill="#1560bd"/>
-        <rect x="112" y="92" width="120" height="12" rx="6" fill="#e6f1fc"/>
-        <g class="air" fill="none" stroke="#1560bd" stroke-width="5" stroke-linecap="round">
-          <path d="M140 210c0 40-30 60-30 110"/>
-          <path d="M220 210c0 50-12 70-12 130"/>
-          <path d="M300 210c0 50 12 70 12 130"/>
-          <path d="M380 210c0 40 30 60 30 110"/>
-        </g>
-      </svg>
-    </div>
+    <div class="unit"><img class="hero-img" src="images/p6.jpg" alt="Cool Expert Karachi technicians installing a split AC" width="1000" height="667"></div>
   </div>
 </div>
 
@@ -254,26 +239,30 @@ footer b{color:var(--white)}
     </div>
     <div class="grid">
       <article class="card feature">
-        <div class="ico" style="color:#0a2f6b"><svg aria-hidden="true"><use href="#i-ac"/></svg></div>
+        <div class="ico" style="color:#1f62b5"><svg aria-hidden="true"><use href="#i-ac"/></svg></div>
         <h3>Split AC specialist</h3>
         <p>Split type air conditioners are our main work, from fault finding to full service.</p>
       </article>
       <article class="card">
+        <img src="images/p7.jpg" alt="Technician fitting a split AC indoor unit" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-ac"/></svg></div>
         <h3>AC installation</h3>
         <p>New unit fitted neatly with proper piping, drainage and a cooling test before we leave.</p>
       </article>
       <article class="card">
+        <img src="images/p11.jpg" alt="Indoor AC unit opened up on the wall" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-move"/></svg></div>
         <h3>AC removal and shifting</h3>
         <p>Moving house or office? We take the unit down safely and refit it at the new place.</p>
       </article>
       <article class="card">
+        <img src="images/p5.jpg" alt="Gas charging an outdoor AC unit with gauges" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-gas"/></svg></div>
         <h3>Gas charging</h3>
         <p>Leak check first, then gas refilled to the right pressure so the cooling comes back.</p>
       </article>
       <article class="card">
+        <img src="images/p9.jpg" alt="Technician repairing an indoor AC unit" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-tool"/></svg></div>
         <h3>AC repairing and servicing</h3>
         <p>No cooling, water dripping, noise or tripping. We repair it and give a full wash service.</p>
@@ -284,11 +273,13 @@ footer b{color:var(--white)}
         <p>Not cooling, over-icing or compressor trouble, repaired at your home.</p>
       </article>
       <article class="card">
+        <img src="images/p4.jpg" alt="Testing an inverter AC PCB card" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-chip"/></svg></div>
         <h3>Inverter AC PCB repairing</h3>
         <p>Inverter AC showing an error code or not starting? We repair the PCB card instead of replacing the whole unit.</p>
       </article>
       <article class="card">
+        <img src="images/p10.jpg" alt="Outdoor AC units installed on a commercial building" loading="lazy">
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-cal"/></svg></div>
         <h3>Monthly and annual maintenance contract</h3>
         <p>Regular service visits for homes, offices and shops on a monthly or yearly contract.</p>
@@ -323,6 +314,25 @@ footer b{color:var(--white)}
       <div class="pt"><h3>Genuine parts</h3><p>Original parts only, so the repair lasts.</p></div>
       <div class="pt"><h3>Warranty service</h3><p>Our work comes with a warranty.</p></div>
       <div class="pt"><h3>Home service</h3><p>We come to your door, anywhere in Karachi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="work">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Our work</p>
+      <h2>Hamara kaam</h2>
+      <p>Gas charging, deep cleaning and repairs done for our customers.</p>
+    </div>
+    <div class="gallery">
+      <img src="images/p2.jpg" alt="Gas charging an Orient outdoor unit on a rooftop" loading="lazy">
+      <img src="images/p12.jpg" alt="Two indoor AC units opened for coil cleaning" loading="lazy">
+      <img src="images/p13.jpg" alt="Indoor unit coil and blower taken out for washing" loading="lazy">
+      <img src="images/p8.jpg" alt="Checking pressure on an outdoor AC unit" loading="lazy" style="aspect-ratio:4/5">
+      <img src="images/p3.jpg" alt="Gas pressure check on a rooftop outdoor unit" loading="lazy" class="wide">
+      <img src="images/p10.jpg" alt="Outdoor AC units mounted on steel brackets" loading="lazy">
+      <img src="images/p11.jpg" alt="Indoor AC unit service in progress" loading="lazy">
     </div>
   </div>
 </section>
