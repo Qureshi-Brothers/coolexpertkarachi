@@ -89,6 +89,9 @@ nav a:hover{color:var(--blue)}
 
 .hero-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:18px;box-shadow:0 18px 40px rgba(31,98,181,.22);display:block}
 .card img{width:calc(100% + 48px);margin:-24px -24px 6px;aspect-ratio:3/2;object-fit:cover;border-radius:14px 14px 0 0;display:block}
+.offers{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:start}
+.offers img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 10px 26px rgba(31,98,181,.18)}
+@media (max-width:900px){.offers{grid-template-columns:1fr}}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block}
 .gallery img.wide{grid-column:span 2;aspect-ratio:auto;height:100%}
@@ -197,6 +200,7 @@ footer b{color:var(--white)}
     </a>
     <nav aria-label="Main">
       <a href="#services">Services</a>
+      <a href="#offers">Offers</a>
       <a href="#how">How it works</a>
       <a href="#work">Our work</a>
       <a href="#why">Why us</a>
@@ -288,6 +292,20 @@ footer b{color:var(--white)}
   </div>
 </section>
 
+<section id="offers" style="background:var(--frost);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Special offer</p>
+      <h2>50% discount for hospitals, masjids and schools</h2>
+      <p>Special service rates for healthcare institutes, religious places and educational institutions. Call or WhatsApp to book.</p>
+    </div>
+    <div class="offers">
+      <img src="images/offer.jpg" alt="Cool Expert promotional offer: 50% flat discount for healthcare institutes, religious places and educational institutions" loading="lazy" width="1000" height="667">
+      <img src="images/flyer.jpg" alt="Cool Expert Karachi services flyer with phone and WhatsApp numbers" loading="lazy" width="800" height="1000">
+    </div>
+  </div>
+</section>
+
 <section class="steps" id="how">
   <div class="wrap">
     <div class="head">
@@ -326,11 +344,12 @@ footer b{color:var(--white)}
       <p>Gas charging, deep cleaning and repairs done for our customers.</p>
     </div>
     <div class="gallery">
+      <img src="images/p14.jpg" alt="Servicing a Gree split AC indoor unit" loading="lazy">
       <img src="images/p2.jpg" alt="Gas charging an Orient outdoor unit on a rooftop" loading="lazy">
       <img src="images/p12.jpg" alt="Two indoor AC units opened for coil cleaning" loading="lazy">
       <img src="images/p13.jpg" alt="Indoor unit coil and blower taken out for washing" loading="lazy">
       <img src="images/p8.jpg" alt="Checking pressure on an outdoor AC unit" loading="lazy" style="aspect-ratio:4/5">
-      <img src="images/p3.jpg" alt="Gas pressure check on a rooftop outdoor unit" loading="lazy" class="wide">
+      <img src="images/p3.jpg" alt="Gas pressure check on a rooftop outdoor unit" loading="lazy">
       <img src="images/p10.jpg" alt="Outdoor AC units mounted on steel brackets" loading="lazy">
       <img src="images/p11.jpg" alt="Indoor AC unit service in progress" loading="lazy">
     </div>
