@@ -112,6 +112,8 @@ nav a:hover{color:var(--blue)}
 .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-family:var(--display);font-weight:700;font-size:16px;color:#fff;text-decoration:none}
 .mbar svg{width:20px;height:20px}
 @media (max-width:900px){.cover{grid-template-columns:1fr}.mbar{display:grid}.float{display:none !important}}
+.card .duo{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:-24px -24px 6px;border-radius:14px 14px 0 0;overflow:hidden}
+.card .duo img{max-width:none;width:100%;margin:0;border-radius:0;aspect-ratio:3/2;object-fit:cover}
 /* sections */
 section{padding:64px 0}
 .head{max-width:40em;margin-bottom:34px}
@@ -299,7 +301,7 @@ footer b{color:var(--white)}
         <p>No cooling, water dripping, noise or tripping. We repair it and give a full wash service.</p>
       </article>
       <article class="card">
-        <img src="images/fridge.jpg" alt="Technician repairing a chest freezer compressor" loading="lazy">
+        <div class="duo"><img src="images/fridge.jpg" alt="Technician repairing a chest freezer compressor" loading="lazy"><img src="images/workshop.jpg" alt="Gas charging a freezer in the Cool Expert Karachi workshop" loading="lazy"></div>
         <div class="ico" style="color:#fff"><svg aria-hidden="true"><use href="#i-fridge"/></svg></div>
         <h3>Fridge and freezer repair</h3>
         <p>Not cooling, over-icing or compressor trouble, repaired at your home.</p>
@@ -371,7 +373,6 @@ footer b{color:var(--white)}
       <h2>Hamara kaam</h2>
       <p>Gas charging, deep cleaning and repairs done for our customers.</p>
     </div>
-    <img src="images/workshop.jpg" alt="Cool Expert Karachi workshop, technician gas charging a freezer" loading="lazy" style="width:100%;height:auto;border-radius:14px;display:block;margin-bottom:14px">
     <div class="gallery">
       <img src="images/p14.jpg" alt="Servicing a Gree split AC indoor unit" loading="lazy">
       <img src="images/p2.jpg" alt="Gas charging an Orient outdoor unit on a rooftop" loading="lazy">
